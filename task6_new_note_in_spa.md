@@ -7,7 +7,7 @@ participant server
   activate server
   server->>browser: {message: "note created"}
   deactivate server
-  Note right of browser: The server stores the note and instead of redirecting to a new GET request to refresh the page, it returns a message.
+  Note right of browser: The server stores the note and instead of sending a redirect GET request to the browser to refresh the page, it returns a message.
   Note left of browser: The browser would re-render only the note list to include the submitted notes.
 
 
